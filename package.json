@@ -1,0 +1,24 @@
+{
+  "name": "admin-dashboard",
+  "version": "1.0.0",
+  "description": "Modern admin dashboard with React frontend, Node.js backend, and PostgreSQL",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "npm run dev --workspace=packages/frontend",
+    "dev:backend": "npm run dev --workspace=packages/backend",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "start": "npm run start:backend",
+    "start:backend": "npm run start --workspace=packages/backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
