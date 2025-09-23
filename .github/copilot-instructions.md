@@ -33,7 +33,7 @@ docker-compose logs postgres        # View database logs
 ```
 
 ### Package Management
-- **Always install from root** using workspace syntax: `npm install package --workspace=packages/frontend`
+- **Always install from root** using workspace syntax: `
 - Dependencies are managed per package but coordinated through root workspace
 
 ## Code Patterns & Conventions
